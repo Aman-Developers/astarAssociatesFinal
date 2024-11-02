@@ -391,6 +391,7 @@ span{
 .about-content p {
     font-size: 1.7rem;
     margin: 2rem 0 3rem;
+    font-family: 'poppins', sans-serif;
 }
 
 .about-content ul li {
@@ -958,7 +959,7 @@ span{
 
 .img-box {
   width: 200px;
-  /* height: 200px; */
+  height: 200px;
   animation: rotate 30s infinite ease-in forwards alternate;
   transition: all 0.25s ease-in;
   margin: 50px 25px;
