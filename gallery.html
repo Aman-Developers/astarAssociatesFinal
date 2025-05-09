@@ -30,6 +30,58 @@
   flex-wrap: wrap;
 }
 
+/* section.new-offers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+.img-box2 {
+  width: 158px;
+  height: 280px;
+  grid-column: span 2;
+  animation: rotate 30s infinite ease-in forwards alternate;
+  transition: all 0.25s ease-in;
+  /* margin: 50px 25px; */
+  box-shadow: 0 0 10px 2px #feba00;
+  /* margin-right: 150px; */
+
+}
+
+.img-box1 {
+  width: 158px;
+  height: 280px;
+  grid-column: span 2;
+  animation: rotate 30s infinite ease-in forwards alternate;
+  transition: all 0.25s ease-in;
+  /* margin: 50px 25px; */
+  box-shadow: 0 0 10px 2px #feba00;
+  margin-left: 100px;
+}
+
+/* Media query for tablet */
+@media (max-width: 992px) {
+  section.new-offers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .img-box1{
+    margin: 5px;
+  }
+}
+
+/* Media query for mobile */
+@media (max-width: 576px) {
+  section.new-offers {
+    grid-template-columns: 1fr;
+  }
+  .img-box1{
+    margin: 5px;
+  }
+}
+
 </style>
 
 <body style="background-color:#fdf4dc">
@@ -160,8 +212,18 @@
   </div>
 
   <div class="img-box">
-    <img src="images1/new-img7.jpeg" alt="">
+    <img src="images1/new-img7.jpeg"  alt="">
   </div>
+
+
+  <div class="img-box1">
+    <video src="images1/video1.mp4" autoplay loop controls muted height="280px" width=""></video>
+  </div>
+
+  <div class="img-box2">
+    <video class="video" src="images1/new-video-compressed.mp4" autoplay loop controls muted height="280px" width=""></video>
+  </div>
+ 
 
 </section>
 
